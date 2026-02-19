@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aim Training</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>Aim Training for people who have a skill issue.</h1>
+        <h2>Click th button to start. Try to click as many dots as you can. Every misclick will reduce your score.</h2>
+        <h2 id="timer">60</h2>
+        <button onclick="startGame()">Starting Button</button>
+
+        <div class="game">
+            <div id="target" onmousedown="targetClick()"></div>
+            <div id="background" onmousedown="fail()"></div>
+            <div id="score">0</div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
